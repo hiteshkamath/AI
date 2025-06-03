@@ -19,14 +19,6 @@ This project demonstrates **real-time face detection** and **emotion recognition
 - [MediaPipe](https://google.github.io/mediapipe/)
 - [DeepFace](https://github.com/serengil/deepface)
 
----
-
-## 🗂️ Project Structure
-
-face-emotion-detection/
-├── face_detection.py       # Real-time face mesh detection using MediaPipe
-├── emotion_detection.py    # Real-time emotion recognition using DeepFace
-└── README.md               # Project documentation
 
 📌 Notes
 	•	Ensure your webcam is working and accessible.
