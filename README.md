@@ -19,6 +19,7 @@ This project demonstrates **real-time face detection** and **emotion recognition
 - [MediaPipe](https://google.github.io/mediapipe/)
 - [DeepFace](https://github.com/serengil/deepface)
 
+---
 
 📌 Notes
 	•	Ensure your webcam is working and accessible.
