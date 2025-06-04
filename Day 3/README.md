@@ -62,9 +62,83 @@ python human_detection_email.py
 
 •	Note: Update the following in the script:
 
-  1.	sender_email and receiver_email
+  1.	Sender_email and Receiver_email
   
   2.	Your Gmail App Password
   
   3.	Ensure alert.wav file is present in the same folder.
+
+### 🎯 Red Object Detection
+
+```bash
+python object_detection.py
+```
+•	Detects red-colored objects using HSV color space.
+
+•	Displays both original and masked output in separate OpenCV windows.
+
+•	Press Q to stop the detection.
+
+---
+
+## 📂 Project Structure
+
+```
+
+day03-detection/
+├── pose_estimation.py          # Full-body pose detection using MediaPipe
+├── human_detection_email.py    # Pose detection with sound + email alert
+├── object_detection.py         # HSV-based red object detection
+├── alert.wav                   # Alert sound file (required)
+└── README.md                   # Project documentation
+
+```
+---
+
+## 🌱 Future Improvements
+
+•	Add object detection using YOLO or SSD for general objects
+
+•	Use face detection along with pose for accuracy
+
+•	Log detections with timestamps
+
+•	Convert to a Flask or Gradio web app
+
+---
+
+## 🧾 Requirements Summary
+
+•	Python 3.7+
+
+•	OpenCV
+
+•	MediaPipe
+
+•	Playsound
+
+•	smtplib (for email alerts)
+
+---
+
+## 🙌 Credits
+
+This project uses:
+
+•	MediaPipe
+ 
+•	OpenCV
+ 
+•	Playsound
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+Made with ❤️ using Python, MediaPipe, and OpenCV.
+
 
