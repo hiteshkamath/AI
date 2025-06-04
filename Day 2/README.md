@@ -1,90 +1,66 @@
-# 🎭 Real-Time Emotion Recognition with DeepFace, MediaPipe & OpenCV
+# 🎭 Real-Time AI-Powered Emotion & Face Recognition Toolkit
 
-This project brings together computer vision and AI to detect human emotions in real-time using your webcam. Built with Python, it combines the power of DeepFace, MediaPipe, and OpenCV.
+This project brings together **computer vision** and **AI** to explore real-time face mesh detection, emotion recognition (with voice), and hand distance monitoring using your webcam. Built with Python, it combines the power of **DeepFace**, **MediaPipe**, **OpenCV**, **pyttsx3**, and **Pygame**.
 
 ---
 
 ## 📌 Features
 
-- Real-time webcam-based emotion detection  
-- Displays the dominant emotion on the video feed  
-- Lightweight and runs locally  
-- Can be extended with more features (e.g. emotion logging, charts)
-
----
-
-## 🛠️ Installation
-
-Install the required packages using pip:
-
-```bash
-pip install opencv-python mediapipe deepface
-```
-
-(Optional for better performance):
-
-```bash
-pip install tensorflow
-```
-
----
-
-## 🚀 Getting Started
-
-1. Clone this repository.
-2. Run the main script:
-
-```bash
-python emotion_detector.py
-```
-
-> Press `Q` to quit the video stream.
+- 🎭 Real-Time Emotion Detection using DeepFace  
+- 🗣️ Voice Feedback for emotions using pyttsx3  
+- ✋ Hand Distance Measurement with alert sound  
+- 👁️ Face Mesh Detection using MediaPipe  
+- 🖥️ Lightweight, runs locally on most machines  
+- 🔌 No internet needed after installation
 
 ---
 
 ## 📂 Project Structure
 
 ```
-emotion-recognition/
-├── emotion_detector.py       # Main script
-├── README.md                 # This file
-└── demo.png / demo.gif       # Optional: Preview images or video
+emotion-ai-suite/
+├── emotion_detection.py             # Basic emotion detection with DeepFace
+├── emotion_detection_withvoice.py  # Emotion detection with voice output
+├── hand_distance.py                # Hand distance detection with sound alert
+├── face_detection.py               # Face mesh visualization
+├── alert.wav                       # Sound used in hand_distance.py
+├── README.md                       # This file
+└── demo.png / demo.gif             # Optional: Visual preview
+
+```
+
+## 🛠️ Installation
+
+Install the required packages:
+
+```bash
+pip install opencv-python mediapipe deepface pyttsx3 pygame
+
 ```
 
 ---
 
-## 🧠 How It Works
+## 🚀 Getting Started
 
-1. Captures webcam input using OpenCV  
-2. Uses DeepFace to analyze facial expressions in real time  
-3. Identifies the **dominant emotion** for each frame  
-4. Displays the emotion as text overlay on the live feed
+Follow these steps to run the project:
 
----
+1. **Clone the repository** or download the ZIP file and extract it.
+2. **Open a terminal** and navigate to the project folder.
+3. **Run any of the following scripts depending on your need:**
 
-## 📸 Example Output
+### ▶️ Emotion Detection (Text Only)
+
+```bash
+python emotion_detection.py
 
 ```
-Emotion: happy 😄
-```
-
-Detected emotions may include:
-- happy
-- sad
-- angry
-- surprise
-- fear
-- disgust
-- neutral
-
 ---
-
 ## 🌱 Future Improvements
 
-- Add MediaPipe face mesh visualization  
-- Save emotion logs over time  
-- Display probability bar chart  
-- Deploy as a web app using Streamlit or Gradio
+- Add emotion log history & graphs  
+- Visual dashboards for each program  
+- Merge all features into a single UI using Streamlit or Gradio  
+- Add image/video input support
 
 ---
 
@@ -94,6 +70,8 @@ Detected emotions may include:
 - OpenCV (`opencv-python`)
 - MediaPipe
 - DeepFace
+- pyttsx3 (for text-to-speech)
+- pygame (for sound alerts)
 - TensorFlow (optional but recommended)
 
 ---
@@ -104,6 +82,8 @@ This project uses:
 - [DeepFace](https://github.com/serengil/deepface)
 - [MediaPipe](https://google.github.io/mediapipe/)
 - [OpenCV](https://opencv.org/)
+- [pyttsx3](https://pypi.org/project/pyttsx3/)
+- [pygame](https://pypi.org/project/pygame/)
 
 ---
 
